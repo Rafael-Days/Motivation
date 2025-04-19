@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:id="@+id/textview_vamos_comecar"
+        android:text="Vamos Começar?"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edittext_qual_nome"
+        android:hint="Qual seu Nome?"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:textColorHint="@color/white"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingBottom="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button_salvar"
+        android:layout_alignParentBottom="true"
+        android:text="Salvar"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/pink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <!-- android:background="@drawable/button_background_main" -->
+</RelativeLayout>

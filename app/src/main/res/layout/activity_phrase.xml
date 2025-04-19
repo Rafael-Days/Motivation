@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PhraseActivity">
+
+    <View
+        android:id="@+id/view_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/view_menu_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:background="@color/purple" />
+
+    <ImageView
+        android:id="@+id/imageview_ic_all"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignTop="@id/view_menu_phrase"
+        android:layout_alignBottom="@id/view_menu_phrase"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/view_center"
+        android:src="@drawable/ic_all"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageview_ic_sun"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/view_menu_phrase"
+        android:layout_alignBottom="@id/view_menu_phrase"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_happy"
+        app:tint="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageview_ic_happy"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignTop="@id/view_menu_phrase"
+        android:layout_alignBottom="@id/view_menu_phrase"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/view_center"
+        android:src="@drawable/ic_sun"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/textview_nome_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_menu_phrase"
+        android:gravity="center"
+        android:paddingTop="32dp"
+        android:text="Olá, TESTE!" />
+
+    <TextView
+        android:id="@+id/textview_phrases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:paddingHorizontal="32dp"
+        android:text="TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE "
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/separador"
+        android:layout_width="128dp"
+        android:layout_height="4dp"
+        android:layout_below="@id/textview_phrases"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="5dp"
+        android:background="@color/purple" />
+
+    <Button
+        android:id="@+id/button_new_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/purple"
+        android:text="@string/nova_frase"
+        android:textColor="@color/white" />
+    <!-- android:background="@drawable/button_background_phrase" -->
+
+</RelativeLayout>
