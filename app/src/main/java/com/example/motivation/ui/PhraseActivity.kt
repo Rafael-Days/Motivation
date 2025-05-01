@@ -9,7 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.motivation.utils.AppConstants
 import com.example.motivation.R
 import com.example.motivation.databinding.ActivityPhraseBinding
-import com.example.motivation.utils.dataPhrases
+import com.example.motivation.utils.DataPhrases
 
 class PhraseActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -45,7 +45,7 @@ class PhraseActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun phrasesRandom() {
-        val randonPhrase = dataPhrases.phrases.random()
-        binding.textviewPhrases.text = randonPhrase.phrases
+        //val randonPhrase = DataPhrases.phrases.random()
+        binding.textviewPhrases.text = DataPhrases.phrases.random().phrases
     }
 }

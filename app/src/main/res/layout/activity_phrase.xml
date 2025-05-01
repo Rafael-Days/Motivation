@@ -58,7 +58,7 @@
         android:layout_below="@id/view_menu_phrase"
         android:gravity="center"
         android:paddingTop="32dp"
-        android:text="Olá, TESTE!" />
+        android:text="@string/label_nome_teste" />
 
     <TextView
         android:id="@+id/textview_phrases"
@@ -68,7 +68,7 @@
         android:gravity="center"
         android:justificationMode="inter_word"
         android:paddingHorizontal="32dp"
-        android:text="TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE "
+        android:text="@string/label_texto_teste"
         android:textStyle="bold" />
 
     <View
@@ -90,7 +90,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:backgroundTint="@color/purple"
-        android:text="@string/nova_frase"
+        android:text="@string/button_nova_frase"
         android:textColor="@color/white" />
     <!-- android:background="@drawable/button_background_phrase" -->
 

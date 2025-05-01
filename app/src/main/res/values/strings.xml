@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Motivation</string>
     <string name="name_information">Informe seu nome!</string>
-    <string name="nova_frase">NOVA FRASE</string>
+    <string name="label_vamos_comecar">Vamos Começar?</string>
+    <string name="hint_qual_seu_nome">Qual seu Nome?</string>
+
+    <string name="label_nome_teste">Olá, TESTE!</string>
+    <string name="label_texto_teste">TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE</string>
+
+    <string name="button_salvar">Salvar</string>
+    <string name="button_nova_frase">NOVA FRASE</string>
 </resources>

@@ -5,7 +5,7 @@ data class Phrase(
     val phrases: String
 )
 
-object dataPhrases {
+object DataPhrases {
     val phrases = listOf(
         Phrase(1, "Motivação é isso ai Motivação é isso ai Motivação é isso ai Motivação é isso ai "),
         Phrase(2, "Eu tenho algo a dizer, explicar pra voce, porém garanto a voce, que engraçdo não serei dessa vez"),

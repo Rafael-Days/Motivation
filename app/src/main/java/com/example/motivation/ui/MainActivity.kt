@@ -32,23 +32,27 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         binding.buttonSalvar.setOnClickListener(this)
     }
-    // teste
+
     override fun onClick(v: View) {
         if (v.id == R.id.button_salvar) {
-            val nameUser = binding.edittextQualNome.text.toString()
-
-            if (userBusiness.checkCredentials(nameUser)) {
-                val bundle = Bundle()
-                bundle.putString(AppConstants.NAME_KEY, nameUser)
-
-                val intent: Intent = Intent(this, PhraseActivity::class.java)
-                intent.putExtras(bundle)
-                startActivity(intent)
-            } else {
-                Toast.makeText(this, R.string.name_information, Toast.LENGTH_SHORT).show()
-            }
+            getNameUser()
         } else {
 
+        }
+    }
+
+    private fun getNameUser(){
+        val nameUser = binding.edittextQualNome.text.toString()
+
+        if (userBusiness.checkCredentials(nameUser)) {
+            val bundle = Bundle()
+            bundle.putString(AppConstants.NAME_KEY, nameUser)
+
+            val intent: Intent = Intent(this, PhraseActivity::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)
+        } else {
+            Toast.makeText(this, R.string.name_information, Toast.LENGTH_SHORT).show()
         }
     }
 }

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/Java/Atividade PS2" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Java/Crud Mapa PS2" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Java/JogoDaVelha" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Java/SI_DP" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Motivation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>

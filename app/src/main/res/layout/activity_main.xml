@@ -9,17 +9,17 @@
 
     <TextView
         android:id="@+id/textview_vamos_comecar"
-        android:text="Vamos Começar?"
+        android:text="@string/label_vamos_comecar"
         android:textColor="@color/white"
         android:gravity="center"
         android:paddingTop="16dp"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <EditText
         android:id="@+id/edittext_qual_nome"
-        android:hint="Qual seu Nome?"
+        android:hint="@string/hint_qual_seu_nome"
         android:inputType="text"
         android:autofillHints="name"
         android:textColorHint="@color/white"
@@ -32,7 +32,7 @@
     <Button
         android:id="@+id/button_salvar"
         android:layout_alignParentBottom="true"
-        android:text="Salvar"
+        android:text="@string/button_salvar"
         android:textColor="@color/white"
         android:backgroundTint="@color/pink"
         android:layout_centerHorizontal="true"
